@@ -35,18 +35,18 @@
         </div>
     </div>
 </div>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
 <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase.js"></script>
 <script>
 
     var firebaseConfig = {
-        apiKey: "AIzaSyBJ8tEmo2kUqcMiXqBNjjbwxwVCX70gobw",
-    authDomain: "cinebaz-320205.firebaseapp.com",
-    projectId: "cinebaz-320205",
-    storageBucket: "cinebaz-320205.appspot.com",
-    messagingSenderId: "190777535715",
-    appId: "1:190777535715:web:e3219e0a17381d48a229d6",
-    measurementId: "G-XNGPP8M7T1"
+        apiKey: "{{ config('firebase.apiKey')}}",
+        authDomain: "{{ config('firebase.authDomain')}}",
+        projectId: "{{ config('firebase.projectId')}}",
+        storageBucket: "{{ config('firebase.storageBucket')}}",
+        messagingSenderId: "{{ config('firebase.messagingSenderId')}}",
+        appId: "{{ config('firebase.appId')}}",
+        measurementId: "{{ config('firebase.measurementId')}}"
     };
 
     firebase.initializeApp(firebaseConfig);

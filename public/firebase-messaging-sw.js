@@ -10,20 +10,20 @@ Initialize the Firebase app in the service worker by passing in the messagingSen
 * New configuration for app@pulseservice.com
 */
 firebase.initializeApp({
-        apiKey: "AIzaSyBJ8tEmo2kUqcMiXqBNjjbwxwVCX70gobw",
-        authDomain: "cinebaz-320205.firebaseapp.com",
-        projectId: "cinebaz-320205",
-        storageBucket: "cinebaz-320205.appspot.com",
-        messagingSenderId: "190777535715",
-        appId: "1:190777535715:web:e3219e0a17381d48a229d6",
-        measurementId: "G-XNGPP8M7T1"
-    });
+    apiKey: "xxxxxxxxxxxx",
+    authDomain: "xxxxxxxxxxxxxx",
+    projectId: "xxxxxxxxxxxx",
+    storageBucket: "xxxxxxxxxxxxxx",
+    messagingSenderId: "xxxxxxxxxxx",
+    appId: "xxxxxxxxxxxxxx",
+    measurementId: "xxxxxxxxxxxxx"
+});
 
 /*
 Retrieve an instance of Firebase Messaging so that it can handle background messages.
 */
 const messaging = firebase.messaging();
-messaging.setBackgroundMessageHandler(function(payload) {
+messaging.setBackgroundMessageHandler(function (payload) {
     console.log(
         "[firebase-messaging-sw.js] Received background message ",
         payload,
